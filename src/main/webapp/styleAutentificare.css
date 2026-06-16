@@ -1,0 +1,119 @@
+/* Fundal și font */
+body {
+    background-color: #f4f4ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Titlu */
+h1 {
+    color: #6610f2;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Centrare */
+div[align="center"] {
+    margin-top: 60px;
+}
+
+/* Form container */
+form {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(75, 0, 130, 0.2);
+    display: inline-block;
+    text-align: left;
+}
+
+/* Tabelul cu input-uri */
+table {
+    margin-bottom: 15px;
+}
+
+td {
+    padding: 10px 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Input-uri */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 250px;
+    padding: 10px;
+    background-color: #f6f6ff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #6610f2;
+    outline: none;
+}
+
+/* Butonul de login */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #6610f2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #3a006a;
+}
+
+/* Mesaje de eroare / succes */
+div[style*="color: red"],
+div[style*="color: green"] {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Linkuri */
+form p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+a {
+    color: #6610f2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Butonul Back */
+.back-button {
+    background-color: #ececff;
+    border: none;
+    padding: 10px 20px;
+    color: #6610f2;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #520dc2;
+}

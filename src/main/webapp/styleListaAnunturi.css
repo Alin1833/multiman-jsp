@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f0ff;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #6610f2;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header .logo img {
+  height: 70px;          
+  max-height: 70px;    
+  object-fit: contain; 
+}
+header div {
+  margin: 0.5rem;
+}
+
+.butoane {
+  background-color: #6610f2;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin: 0.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.butoane:hover {
+  background-color: #520dc2;
+}
+
+
+h2 {
+  text-align: center;
+  color: #3d0fc4;
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(102, 16, 242, 0.1);
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #6610f2;
+  color: white;
+  cursor: pointer;
+}
+
+th, td {
+  padding: 0.9rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+tbody tr:hover {
+  background-color: #f8f5ff;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-red {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 4px;
+}
+
+.status-refuzat {
+  color: #dc3545;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+.status-acceptata {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+
+#notification {
+  position: fixed;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  min-width: 250px;
+  max-width: 90vw;
+  padding: 16px 32px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  opacity: 0.98;
+  transition: transform 0.2s, opacity 0.2s;
+  display: none;
+}
+#notification.success {
+  background-color: #28a745;
+  border-left: 6px solid #17913c;
+}
+#notification.error {
+  background-color: #dc3545;
+  border-left: 6px solid #a81d2b;
+}
+
+.btn-blue {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 4px;
+}
+
+.btn-blue:hover {
+  background-color: #0056b3;
+}
+

@@ -1,0 +1,210 @@
+/* ===== General ===== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f0ff;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #6610f2;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header .logo img {
+  height: 70px;          
+  max-height: 70px;    
+  object-fit: contain; 
+}
+
+header div {
+  margin: 0.5rem;
+}
+
+.butoane {
+  background-color: #6610f2;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin: 0.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.butoane:hover {
+  background-color: #520dc2;
+}
+
+/* ===== Main Container ===== */
+main.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== Titlu ===== */
+h2 {
+  color: #3d0fc4;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* ===== Tabel ===== */
+table.display {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(102, 16, 242, 0.1);
+  overflow: hidden;
+}
+
+thead {
+  background-color: #6610f2;
+  color: white;
+}
+
+th, td {
+  padding: 0.9rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+th {
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+th:hover {
+  background-color: #520dc2;
+}
+
+tbody tr:hover {
+  background-color: #f8f5ff;
+}
+
+td {
+  color: #333;
+}
+
+/* ===== DataTables Buttons/Inputs (optional) ===== */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  background-color: #6610f2 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 6px !important;
+  margin: 0 2px !important;
+  padding: 0.5em 1em !important;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: #520dc2 !important;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #6610f2;
+  }
+}
+
+/* ===== Notificare (reutilizabil) ===== */
+#notification {
+  position: fixed;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  min-width: 250px;
+  max-width: 90vw;
+  padding: 16px 32px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  opacity: 0.98;
+  transition: transform 0.2s, opacity 0.2s;
+  display: none;
+}
+#notification.success {
+  background-color: #28a745;
+  border-left: 6px solid #17913c;
+}
+#notification.error {
+  background-color: #dc3545;
+  border-left: 6px solid #a81d2b;
+}
+
+/* ===== Responsive ===== */
+
+
+.btn-green {
+  background-color: #28a745 !important;
+  color: white !important;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-bottom: 1.2rem;
+}
+.btn-green:hover {
+  background-color: #218838 !important;
+}
+
+.btn-recenzie {
+    background-color: #6610f2;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.btn-recenzie:hover {
+    background-color: #520dc2;
+}
